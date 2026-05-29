@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #dcdde1;
+}
+
+.navigation {
+    display: flex;
+}
+
+aside {
+    min-height: 100vh;
+    width: 20%;
+    color: white;
+    background: #A562FC;
+    background: linear-gradient(0deg,rgba(165, 98, 252, 1) 0%, rgba(42, 123, 155, 1) 100%);
+    position: fixed;
+    z-index: 2;
+}
+
+.titleAside {
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.titleAside h2 {
+    padding: 2%;
+}
+
+.titleAside hr {
+    width: 70%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button button {
+    border: none;
+    border-radius: 10px;
+    margin: 1%;
+    padding: 2%;
+    width: 40%;
+}
+
+.button button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #A562FC;
+}
+
+
+header {
+    position: fixed;
+    z-index: 3;
+    margin-left: 20%;
+    width: 80%;
+    height: 60px;
+    background-color: #222f3e ;
+}
+
+.header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    width: 15%;
+}
+
+.logo a {
+    justify-items: center;
+    align-content: center;
+    text-decoration: none;
+}
+
+.logo img {
+    display: block;
+    width: 70%;
+}
+
+.titleBoard {
+    text-align: center;
+    width: 65%;
+    color: white;
+}
+
+.profile {
+    align-items: center;
+    display: flex;
+    width: 15%;
+}
+
+.profile a {
+    justify-items: center;
+    text-decoration: none;
+}
+
+.profile img {
+    display: block;
+    width: 40%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 80vh;
+    margin-top: 60px;
+    margin-left: 20%;
+    padding: 2%;
+    background-color: #dcdde1 ;
+}
+
+.task {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 90%;
+    height: 100%;
+    background-color: #f5f6fa;
+}
+
+.task form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+}
+
+.task input, .task label {
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+}
+
+.task label {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.task button {
+    border: none;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: #576574;
+    color: white;
+}
+
+.task button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #A562FC;
+}
+
+.selection {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.task select {
+    text-align: center;
+    width: 100px;
+}
+
+.dialog {
+    width: 100%;
+}
+
+#dialog {
+    width: 100%;
+}
+
+:modal {
+    margin: auto;
+    width: 25%;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+:modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+:modal form div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+:modal input {
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+}
+
+:modal button {
+    border: none;
+    padding: 1%;
+    margin-bottom: 1%;
+    width: 50%;
+    border-radius: 10px;
+    color: white;
+    background-color: #576574 ;
+}
+
+:modal button:hover {
+    cursor: pointer;
+    background-color: #A562FC;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.cardsContent {
+    text-align: center;
+    padding: 1%;
+    width: 25%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #f5f6fa;
+}
+
+.cardsContent h4, .cardsContent h4  {
+    margin-bottom: 2%;
+}
+
+.toDo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 5% 0 5% 0 ;
+    padding: 2%;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+
+.toDo div {
+    margin-bottom: 5%;
+    width: 100%;
+
+}
+
+.toDo hr {
+    margin-top: 2%;
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 5% 0 5% 0 ;
+    padding: 2%;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+
+.progress div {
+    margin-bottom: 5%;
+    width: 100%;
+
+}
+
+.progress hr {
+    margin-top: 2%;
+}
+
+.finish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 5% 0 5% 0 ;
+    padding: 2%;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+
+.finish div {
+    margin-bottom: 5%;
+    width: 100%;
+
+}
+
+.finish hr {
+    margin-top: 2%;
+}
+
+.buttonChoice {
+    border: none;
+    border-radius: 10px;
+    margin: 1%;
+    padding: 2%;
+    width: 40%;
+}
+
+.buttonChoice:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #576574;
+}
+
+.delete {
+    border: none;
+    border-radius: 10px;
+    margin: 1%;
+    padding: 2%;
+    width: 40%;
+}
+
+
+.delete:hover {
+    cursor: pointer;
+    background-color: #ee5253;
+    color: white;
+}
+
+.inscription {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    z-index: 0;
+}
+
+.inscription::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    min-height: 100vh;
+    background: url(/assets/img/seamless.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.signUp {
+    justify-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.imgSign {
+    align-content: center;
+    justify-items: center;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.imgSign img {
+    display: block;
+    width: 20%;
+}
+
+#signUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    width: 25%;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: #f5f6faB3;
+}
+
+#signUp input {
+    text-align: center;
+    padding: 1%;
+    margin: 2%;
+    width: 75%;
+}
+
+#signUp button {
+    cursor: pointer;
+    margin: 2%;
+    padding: 2%;
+    width: 50%;
+}
+
+#signUp button:hover {
+    background-color: #A562FC;
+    color: white;
+}

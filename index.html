@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/script.js" defer></script>
+        <title>KanFlow</title>
+    </head>
+    <body>
+        <div class="navigation">
+            <aside>
+                <div class="titleAside">
+                    <h2>Mes Projets</h2>
+                    <hr>
+                </div>
+                <div class="button">
+                    <button id="create">Créer</button>
+                    <button id="join">Rejoindre</button>
+                </div>
+                <div id="project">
+                </div>
+            </aside>
+            <header>
+                <div class="header">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/img/Logo KanFlow.png">
+                        </a>
+                    </div>
+                    <div class="titleBoard">
+                        <h2>Titre du Board</h2>
+                        <h4>Message administrateur de la board pour donner un objectif</h4>
+                    </div>
+                    <div class="profile">
+                        <a href="#">
+                            <img src="assets/img/search.png">
+                        </a>
+                        <a href="#">
+                            <img class="cloche" src="assets/img/notifications.png">
+                        </a>
+                        <a href="#">
+                            <img src="assets/img/profile.png">
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <main>
+            <div class="task">
+                <form>
+                    <div>
+                        <label for="title">Titre:</label>
+                        <input type="text" name="title" id="title" placeholder="Titre de la tâche" >
+                    </div>
+                    <div>
+                        <label for="description">Description:</label>
+                        <input type="text" name="description" id="description" placeholder="Description de la tâche" >
+                    </div>
+                    <div>
+                        <label for="date">Date:</label>
+                        <input type="date" name="date" id="date" >
+                    </div>
+                    <div class="selection">
+                        <label for="priority">Priorité:</label>
+                        <select id="priority" name="priority">
+                            <option value="Faible">Faible</option>
+                            <option value="Normal">Normal</option>
+                            <option value="Urgent">Urgent</option>
+                        </select>
+                    </div>
+                    <button id="add">Ajouter une tâche</button>
+                </form>
+            </div>
+            <dialog id="modal">
+                <form method="dialog">
+                    <div>
+                        <label for="title">Titre:</label>
+                        <input type="text" name="title" id="titre" placeholder="Titre de la tâche" >
+                    </div>
+                    <div>
+                        <label for="description">Description:</label>
+                        <input type="text" name="description" id="desc" placeholder="Description de la tâche" >
+                    </div>
+                    <div>
+                        <label for="date">Date:</label>
+                        <input type="date" name="date" id="laDate" >
+                    </div>
+                    <div>
+                        <label for="priority">Priorité:</label>
+                        <select name="priority" id="priorite">
+                            <option value="faible">Faible</option>
+                            <option value="normal">Normal</option>
+                            <option value="urgent">Urgent</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button id="save">Enregistrer</button>
+                        <button id="cancel">Annuler</button>
+                    </div>
+                </form>
+            </dialog>
+            <div class="list">
+                <div id="toDo" class="cardsContent">
+                    <h4>À faire</h4>
+                    <hr>
+                </div>
+                <div id="progress" class="cardsContent">
+                    <h4>En cours</h4>
+                    <hr>
+                </div>
+                <div id="finish" class="cardsContent">
+                    <h4>Terminé</h4>
+                    <hr>
+                </div>
+            </div>
+        </main>
+    </body>
+    </html>
